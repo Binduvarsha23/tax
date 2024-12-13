@@ -74,13 +74,9 @@ const Upload = () => {
           },
         ]);
 
-      if (insertError) {
-        setErrorMessage(insertError.message);
-      } else {
         setFile(null);
         setFileName('');
         alert('File uploaded and details saved successfully!');
-      }
     } catch (error) {
       setErrorMessage(error.message);
     }
